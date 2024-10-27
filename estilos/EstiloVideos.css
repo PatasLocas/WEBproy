@@ -1,0 +1,22 @@
+.Videos {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los videos */
+    flex-wrap: wrap; /* Para que los videos se ajusten si no caben en una fila */
+}
+
+.Videos iframe {
+    border-radius: 8px; /* Borde redondeado opcional */
+    box-shadow: 0 4px 8px rgba(68, 5, 241, 0.2); /* Sombra para dar estilo */
+    width: 540px; /* Tamaño inicial del video */
+    height: 330px;
+}
+
+@media (max-width: 500px) {
+    .Videos iframe {
+        width: 100%; /* Ocupa el ancho del contenedor */
+        height: auto; /* Ajusta la altura proporcionalmente */
+        max-width: 350px; /* Tamaño máximo en dispositivos pequeños */
+    }
+}

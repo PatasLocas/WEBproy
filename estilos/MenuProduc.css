@@ -1,0 +1,58 @@
+
+.MenuProductos {
+    width: 100%;
+    background-color: #000000;
+    padding: 20px;
+    display: flex; /* Para usar flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.buttons {
+    display: flex; /* Usamos flexbox también en los divs */
+    justify-content: center; /* Centramos los botones horizontalmente */
+    align-items: center; /* Alineamos verticalmente los botones */
+}
+
+button {
+    background: none;
+    border: 3px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 3em; /* Ajusta el tamaño del botón con padding */
+    color: var(--color);
+    width: 200px; /* Asigna un ancho específico */
+    height: 60px; /* Asigna un alto específico */
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+
+}
+
+button:hover, button:focus {
+    border-color: var(--hover);
+    color: #ffffff;
+}
+
+.raise {
+    --color: #ffffff;
+    --hover: #591479;
+}
+
+.raise:hover,
+.raise:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+}
+
+@media (max-width: 500px) 
+{
+    button {
+        padding: 0.5em 1.5em; /* Reduce el padding */
+        width: 150px; /* Reduce el ancho */
+        height: 45px; /* Reduce el alto */
+        font-size: 14px; /* Ajusta el tamaño de la fuente si es necesario */
+    }
+}

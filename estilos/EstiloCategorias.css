@@ -1,0 +1,167 @@
+.Categorias {
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido si es necesario */
+    padding: 20px; /* Espacio interno opcional */
+}
+
+.card-wrapperC {
+    width: 100%; /* Cambiado a 100% para ocupar todo el ancho */
+    max-width: none; /* Elimina el max-width para que use el 100% */
+    overflow: hidden; /* Mantiene el comportamiento de ocultar el contenido desbordado */
+}
+
+.card-listC .card-itemC {
+    list-style: none;
+    width: 150px; /* Cambia este valor para ajustar el ancho de la carta */
+    height: 400px; /* Cambia este valor para ajustar la altura de la carta */
+}
+
+.card-listC .card-itemC .card-linkC {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    background: #fff;
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    transition: 0.2s ease;
+    text-align: center; /* Centrar el contenido textual */
+}
+
+.card-listC .card-itemC .card-linkC:active {
+    cursor: grabbing;
+}
+
+.card-listC .card-itemC .card-linkC:hover {
+    border-color: #5372F0;
+}
+
+.card-imageC {
+    width: 200px; /* Cambia este valor para ajustar el tamaño de la imagen */
+}
+
+.card-listC .card-linkC .card-imageC {
+    width: 100%; /* Mantén esto en 100% para que la imagen se ajuste al ancho de la carta */
+    aspect-ratio: 16/9; /* Mantén este valor o ajústalo según necesites */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+}
+
+.card-listC .card-linkC .badgeC {
+    color: #9d26d4;
+    padding: 8px 16px;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 16px;
+    background: #DDE4FF;
+    border-radius: 50px;
+    text-align: center; /* Centrar texto dentro del badge */
+}
+
+.card-listC .card-linkC .badgeC.bissuC {
+    color: #ec11ec;
+    background: #DDE4FF;
+}
+
+.card-listC .card-linkC .badgeC.italiaC {
+    color: #8a078a;
+    background: #DDE4FF;
+}
+
+.card-listC .card-linkC .badgeC.pinckC {
+    color: #470585;
+    background: #DDE4FF;
+}
+
+.card-listC .card-linkC .badgeC.beautyC {
+    color: #228ef3;
+    background: #DDE4FF;
+}
+
+.card-listC .card-linkC .badgeC.adaraC {
+    color: #c7123f;
+    background: #DDE4FF;
+}
+
+.card-listC .card-linkC .card-titleC {
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-listC .card-linkC .card-buttonC {
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-listC .card-linkC:hover .card-buttonC {
+    color: #fff;
+    background: #5372F0;
+}
+
+.card-wrapperC.swiper-pagination-bulletCs {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #5372F0;
+}
+
+.card-wrapperC.swiper-pagination-bullet-activeC {
+    opacity: 1;
+}
+
+.card-wrapperC.swiper-slide-buttonC {
+    color: #5372F0;
+    margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-wrapperC {
+        
+    }
+    
+    .card-listC .card-itemC {
+        width: 150px; /* Cambia este valor para ajustar el ancho en pantallas pequeñas */
+        height: auto; /* Mantén la altura automática o ajusta según sea necesario */
+    }
+
+    .card-listC .card-itemC .card-linkC {
+        padding: 8px; /* Ajustamos el padding */
+        width: 100%; /* Asegura que el link ocupe todo el ancho de la carta */
+    }
+
+    .card-imageC {
+        width: 100px; /* Cambia este valor para ajustar el tamaño de la imagen en pantallas pequeñas */
+    }
+
+    .card-listC .card-linkC .badgeC {
+        font-size: .9rem; /* Aumentamos el tamaño de fuente */
+        padding: 4px 8px; /* Ajustamos el padding de la etiqueta */
+    }
+
+    .card-listC .card-linkC .card-titleC {
+        font-size: 1rem; /* Aumentamos el tamaño del título */
+    }
+
+    .card-listC .card-linkC .card-buttonC {
+        height: 18px; /* Aumentamos el tamaño del botón */
+        width: 18px;
+    }
+
+    .card-wrapperC.swiper-slide-buttonC {
+        display: none; /* Oculta el botón en pantallas pequeñas */
+    }
+}

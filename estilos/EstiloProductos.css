@@ -1,0 +1,150 @@
+.Productos {
+    width: 100%;
+    padding: 20px;
+}
+
+.Productos1, .Productos2 {
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido si es necesario */
+    padding: 20px; /* Espacio interno opcional */
+}
+
+.card-wrapper {
+    width: 100%; /* Cambiado a 100% para ocupar todo el ancho */
+    max-width: none; /* Elimina el max-width para que use el 100% */
+    overflow: hidden; /* Mantiene el comportamiento de ocultar el contenido desbordado */
+}
+
+.card-list .card-item {
+    list-style: none;
+}
+
+.card-list .card-item .card-link {
+    user-select: none;
+    display: block;
+    background: hsl(0, 0%, 100%);
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active {
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: #5372F0;
+}
+
+.card-image {
+    width: 200px;
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 13/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+    color: #9d26d4;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 300;
+    margin: 16px 0 18px;
+    background: #DDE4FF;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .badge.bissu {
+    color: #ec11ec;
+    background: #DDE4FF;
+}
+
+.card-list .card-link .badge.italia {
+    color: #8a078a;
+    background: #DDE4FF;
+}
+
+.card-list .card-link .badge.pinck {
+    color: #470585;
+    background: #DDE4FF;
+}
+
+.card-list .card-link .card-title {
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+    color: #fff;
+    background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+    color: #5372F0;
+    margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-wrapper {
+    }
+
+    .card-list .card-item {
+        width: 250px; /* Ajusta este valor según sea necesario */
+    }
+
+    .card-list .card-item .card-link {
+        padding: 8px; /* Ajustamos el padding */
+        width: 100%; /* Asegura que el link ocupe todo el ancho de la carta */
+    }
+
+    .card-image {
+        width: 100px; /* Aumentamos el tamaño de la imagen */
+    }
+
+    .card-list .card-link .badge {
+        font-size: 1rem; /* Aumentamos el tamaño de fuente */
+        padding: 4px 8px; /* Ajustamos el padding de la etiqueta */
+    }
+
+    .card-list .card-link .card-title {
+        font-size: 1rem; /* Aumentamos el tamaño del título */
+    }
+
+    .card-list .card-link .card-button {
+        height: 18px; /* Aumentamos el tamaño del botón */
+        width: 18px;
+    }
+}

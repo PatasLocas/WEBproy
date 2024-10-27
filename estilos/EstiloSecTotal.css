@@ -1,0 +1,33 @@
+section#section-Total {
+    width: 100vw; /* Asegura que la sección tome todo el ancho del viewport */
+    position: relative;
+    top: 130px; /* Ajusta este valor según la altura de tu header y nav */
+    left: 0;
+    background: linear-gradient(rgb(173, 144, 173), rgb(248, 148, 226)); /* Cambié a linear-gradient */
+    height: calc(100vh - 110px); /* La altura será el 100% del viewport menos el header/nav */
+    overflow-y: auto; /* Habilita el scroll vertical dentro de esta sección */
+    overflow-x: hidden; /* Elimina el scroll horizontal */
+    z-index: 1; /* Asegúrate de que esté detrás del header y el nav */
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+}
+
+.artcGaleria
+{
+    background-color: linear-gradient(rgb(255, 255, 255), rgb(248, 148, 226));
+}
+
+.imgsGale
+{
+    height: 300px; /* Altura fija de 400px */
+    width: 400px;  /* Anchura fija de 400px */
+}
+
+@media (max-width: 500px) {
+    section#section-Total {
+        height: calc(100vh - 145px); /* Mantener la altura actual */
+        margin-top: -50px; /* Ajusta el margen superior */
+        margin-bottom: 20px; /* Ajusta el margen inferior */
+    }
+}
+
+
